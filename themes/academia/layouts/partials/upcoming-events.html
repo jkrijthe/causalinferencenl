@@ -1,0 +1,48 @@
+<section class="section" id="upcoming">
+  <div class="container section__inner--narrow">
+    <h2 class="section__title">Upcoming Events</h2>
+    <p class="section__lead">Our next quarterly meetings and talks.</p>
+
+    {{ $upcoming := hugo.Data.events.upcoming }}
+    {{ if $upcoming }}
+    <ul class="event-list" role="list">
+      {{ range $upcoming }}
+      <li class="event-item event-item--upcoming">
+        <div class="event-item__date-block">
+          <span class="event-item__day">{{ dateFormat "02" .date }}</span>
+          <span class="event-item__month">{{ dateFormat "Jan" .date }}</span>
+          <span class="event-item__year">{{ dateFormat "2006" .date }}</span>
+        </div>
+        <div class="event-item__body">
+          <h3 class="event-item__title">{{ .title }}</h3>
+          <div class="event-item__meta">
+            {{ if .time }}<span class="event-item__meta-item">{{ .time }}</span>{{ end }}
+            {{ if .location }}<span class="event-item__meta-item">{{ .location }}</span>{{ end }}
+          </div>
+          {{ if .abstract }}<p class="event-item__abstract">{{ .abstract }}</p>{{ end }}
+          {{ if .talks }}
+          <ul class="talk-list" role="list">
+            {{ range .talks }}
+            <li class="talk-item">
+              <span class="talk-item__title">{{ .title }}</span>
+              {{ if .speaker }}
+              <span class="talk-item__speaker">
+                {{ .speaker }}{{ if .affiliation }} &middot; {{ .affiliation }}{{ end }}
+              </span>
+              {{ end }}
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+          {{ if .registration }}
+          <a class="badge badge--register" href="{{ .registration }}" target="_blank" rel="noopener">Register</a>
+          {{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    {{ else }}
+    <p class="event-list__empty">No upcoming events scheduled yet — check back soon.</p>
+    {{ end }}
+  </div>
+</section>

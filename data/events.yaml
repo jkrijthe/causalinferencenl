@@ -1,0 +1,99 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# EVENTS
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# upcoming — list of future meetings/talks
+# Each entry supports:
+#
+#   title        (required) Meeting or event name
+#   date         (required) ISO format: "2026-07-03"
+#   time         (optional) e.g. "14:00–17:00 CET"
+#   location     (optional) Building and room, or online link
+#   abstract     (optional) General description of the meeting
+#   registration (optional) URL to registration or sign-up page
+#   talks        (optional) List of planned talks — each talk supports:
+#                  title       Talk title
+#                  speaker     Presenter name
+#                  affiliation Presenter's institution
+#
+# ─────────────────────────────────────────────────────────────────────────────
+
+upcoming:
+  - title: "Quarterly Meeting — Q3 2026"
+    date: "2026-07-03"
+    time: "14:00–17:00 CET"
+    location: "University of Amsterdam, KdVI, Room F3.20, Science Park 107, Amsterdam"
+    abstract: "Two to three talks followed by an open discussion. All researchers
+               working on or interested in causal inference are welcome."
+    registration: ""
+    talks:
+      - title: "Double-Robust Estimation Under Model Misspecification"
+        speaker: "Lena Fischer"
+        affiliation: "Erasmus University Rotterdam"
+      - title: "TBA"
+        speaker: "TBA"
+        affiliation: ""
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# past — list of past meetings, most recent first
+# Each entry supports:
+#
+#   title        (required)
+#   date         (required) ISO format
+#   location     (optional)
+#   summary      (optional) One or two sentences about the overall meeting
+#   talks        (optional) List of talks — each talk supports:
+#                  title       Talk title
+#                  speaker     Presenter name
+#                  affiliation Presenter's institution
+#                  slides      Path relative to /static/, e.g. "files/slides/talk.pdf"
+#                  recording   URL to a recording (YouTube, etc.)
+#
+# To ADD slides: place the PDF in static/files/slides/ and set the slides field.
+# ─────────────────────────────────────────────────────────────────────────────
+
+past:
+  - title: "Quarterly Meeting — Q2 2026"
+    date: "2026-04-04"
+    location: "Delft University of Technology"
+    summary: ""
+    talks:
+      - title: "Sensitivity Analysis for Difference-in-Differences"
+        speaker: "Lena Fischer"
+        affiliation: "Erasmus University Rotterdam"
+        slides: ""
+        recording: ""
+      - title: "Weak Instruments in Practice: Diagnostics and Remedies"
+        speaker: "Carlos Ruiz"
+        affiliation: "Delft University of Technology"
+        slides: ""
+        recording: ""
+
+  - title: "Quarterly Meeting — Q1 2026"
+    date: "2026-01-16"
+    location: "Utrecht University"
+    summary: ""
+    talks:
+      - title: "Graphical Criteria for Valid Instrumental Variables"
+        speaker: "Carlos Ruiz"
+        affiliation: "Delft University of Technology"
+        slides: "files/slides/example.pdf"
+        recording: ""
+      - title: "Causal Discovery with Hidden Confounders"
+        speaker: "Arjun Patel"
+        affiliation: "Utrecht University"
+        slides: "files/slides/example.pdf"
+        recording: ""
+      - title: "Regression Discontinuity: Bandwidth Selection Under Sorting"
+        speaker: "Jane Smith"
+        affiliation: "University of Amsterdam"
+        slides: ""
+        recording: "youtube.com"
+
+  - title: "Quarterly Meeting — Q4 2025"
+    date: "2025-10-10"
+    location: "Erasmus University Rotterdam"
+    summary: "Two presentations on causal discovery methods, followed by a
+              discussion on plans for joint grant applications in 2026."
+    talks: []

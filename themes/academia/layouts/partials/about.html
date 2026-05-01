@@ -1,0 +1,8 @@
+<section class="section section--alt" id="about">
+  <div class="container section__inner--narrow">
+    <h2 class="section__title">{{ .Params.about_title }}</h2>
+    <div class="prose">
+      {{ .Params.about_body | markdownify }}
+    </div>
+  </div>
+</section>

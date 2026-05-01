@@ -1,0 +1,52 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# PEOPLE — key contacts for the network
+# ─────────────────────────────────────────────────────────────────────────────
+# Each entry supports the following fields:
+#
+#   name        (required) Full name
+#   role        (required) e.g. "Associate Professor", "PhD Researcher"
+#   affiliation (required) University or institute
+#   email       (optional) Displayed as a mailto link
+#   website     (optional) Personal or lab website URL
+#   photo       (optional) Path relative to /static/, e.g. "images/people/jane.jpg"
+#                          If omitted, a placeholder initial avatar is shown.
+#   bio         (optional) One or two sentences shown beneath the card
+#
+# To ADD a person: copy one block, paste it at the end, and fill in the fields.
+# To REMOVE a person: delete the entire block (from "- name:" to the next one).
+# To ADD a photo: place the file in static/images/people/ and set the photo field.
+# ─────────────────────────────────────────────────────────────────────────────
+
+- name: "Matej Havelka"
+  role: "PhD student"
+  affiliation: "Delft University of Technology"
+  email: "m.havelka@tudelft.nl"
+  website: ""
+  photo: "images/people/matej_havelka.jpg"
+  bio: "For my PhD I work on methods to bound or falsify the conditional exchangeability assumption. My background is in Computer Science and I am interested in mapping the optimization domains of different sensitivity models to one another."
+
+#- name: "Carlos Ruiz"
+#  role: "Associate Professor"
+#  affiliation: "Delft University of Technology"
+#  email: "c.ruiz@tudelft.nl"
+#  website: ""
+#  photo: ""
+#  bio: "Carlos develops sensitivity-analysis methods for instrumental-variable
+#        estimators."
+#
+#- name: "Lena Fischer"
+#  role: "Assistant Professor"
+#  affiliation: "Erasmus University Rotterdam"
+#  email: "l.fischer@eur.nl"
+#  website: "https://example.com/lenafischer"
+#  photo: ""
+#  bio: "Lena works on assumption testing in difference-in-differences designs."
+#
+#- name: "Arjun Patel"
+#  role: "Assistant Professor"
+#  affiliation: "Utrecht University"
+#  email: "a.patel@uu.nl"
+#  website: ""
+#  photo: ""
+#  bio: "Arjun's research focuses on graphical causal models and their application
+#        in epidemiology."

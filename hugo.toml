@@ -1,0 +1,28 @@
+baseURL = "https://www.causalinference.nl/"
+languageCode = "en-us"
+title = "Dutch Causal Inference Network"
+theme = "academia"
+
+disableKinds = ["taxonomy", "term", "section", "RSS"]
+
+[params]
+  # ── Hero ──────────────────────────────────────────────────────────────────
+  heroTitle    = "Dutch Causal Inference Network"
+  heroSubtitle = "A network of researchers across the Netherlands meeting quarterly to advance causal reasoning in science and practice."
+
+  # ── Navigation ────────────────────────────────────────────────────────────
+  [[params.nav]]
+    label = "About"
+    href  = "#about"
+  [[params.nav]]
+    label = "People"
+    href  = "#people"
+  [[params.nav]]
+    label = "Upcoming Events"
+    href  = "#upcoming"
+  [[params.nav]]
+    label = "Past Events"
+    href  = "#past"
+  [[params.nav]]
+    label = "Contact"
+    href  = "#contact"

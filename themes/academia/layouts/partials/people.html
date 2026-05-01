@@ -1,0 +1,42 @@
+<section class="section" id="people">
+  <div class="container">
+    <h2 class="section__title">People</h2>
+    <p class="section__lead">People behind the meetings.</p>
+
+    <ul class="people-grid" role="list">
+      {{ range hugo.Data.people }}
+      <li class="person-card">
+
+        <!-- Avatar: use photo if provided, otherwise show initials -->
+        <div class="person-card__avatar">
+          {{ if .photo }}
+            <img src="{{ .photo | relURL }}" alt="Photo of {{ .name }}" loading="lazy" />
+          {{ else }}
+            <span class="person-card__initials" aria-hidden="true">
+              {{/* Take first letter of each word in the name */}}
+              {{ range (split .name " ") }}{{ substr . 0 1 }}{{ end }}
+            </span>
+          {{ end }}
+        </div>
+
+        <div class="person-card__body">
+          <h3 class="person-card__name">
+            {{ if .website }}
+              <a href="{{ .website }}" target="_blank" rel="noopener">{{ .name }}</a>
+            {{ else }}
+              {{ .name }}
+            {{ end }}
+          </h3>
+          <p class="person-card__role">{{ .role }}</p>
+          <p class="person-card__affiliation">{{ .affiliation }}</p>
+          {{ if .bio }}<p class="person-card__bio">{{ .bio }}</p>{{ end }}
+          {{ if .email }}
+            <a class="person-card__email" href="mailto:{{ .email }}">{{ .email }}</a>
+          {{ end }}
+        </div>
+
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
