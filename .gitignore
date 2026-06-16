@@ -1,0 +1,10 @@
+# Hugo build output
+public/
+resources/
+.hugo_build.lock
+
+# IDE
+.idea/
+
+# Claude Code
+.claude/

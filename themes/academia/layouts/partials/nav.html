@@ -1,0 +1,13 @@
+<header class="site-header" id="top">
+  <nav class="nav container">
+    <a class="nav__brand" href="#top">CI4AI</a>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" role="list">
+      {{ range .Site.Params.nav }}
+      <li><a class="nav__link" href="{{ .href }}">{{ .label }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

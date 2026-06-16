@@ -1,0 +1,25 @@
+baseURL = "https://www.causalinference.nl/"
+languageCode = "en-us"
+title = "Causal Inference for AI"
+theme = "academia"
+
+disableKinds = ["taxonomy", "term", "section", "RSS"]
+
+[params]
+  # ── Hero ──────────────────────────────────────────────────────────────────
+  heroTitle    = "Causal Inference for AI"
+  heroSubtitle = "A research community meeting regularly to advance causal reasoning for AI — sharing work-in-progress, discussing methodology, and building connections across institutions."
+
+  # ── Navigation ────────────────────────────────────────────────────────────
+  [[params.nav]]
+    label = "Upcoming Events"
+    href  = "#upcoming"
+  [[params.nav]]
+    label = "About"
+    href  = "#about"
+  [[params.nav]]
+    label = "Past Events"
+    href  = "#past"
+  [[params.nav]]
+    label = "Contact"
+    href  = "#contact"

@@ -1,0 +1,18 @@
+# Add participating institutions and groups here.
+# Each entry can have:
+#   name:  Display name (required)
+#   url:   Link to institution/group website (optional)
+#   logo:  Path to logo image under /static/images/partners/ (optional)
+#
+# Example:
+# - name: "University of Amsterdam"
+#   url: "https://www.uva.nl"
+#   logo: "/images/partners/uva.png"
+- name: "Erasmus MC"
+  logo: "/images/logo/erasmus_mc.webp"
+- name: "Leiden MC"
+  logo: "/images/logo/leiden_mc.png"
+- name: "TU Delft"
+  logo: "/images/logo/tu_delft_logo.jpg"
+- name: "Utrecht University"
+  logo: "/images/logo/utrecht_logo.png"

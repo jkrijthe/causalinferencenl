@@ -1,0 +1,33 @@
+<section class="section section--alt" id="about">
+  <div class="container section__inner--narrow">
+    <h2 class="section__title">{{ .Params.about_title }}</h2>
+    <div class="prose">
+      {{ .Params.about_body | markdownify }}
+    </div>
+
+    {{ $partners := hugo.Data.partners }}
+    <div class="partner-logos">
+      <p class="partner-logos__label">Participating institutions &amp; groups</p>
+      <div class="partner-logos__grid">
+        {{ range $partners }}
+        {{ if .url }}
+        <a class="partner-logo" href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}">
+        {{ else }}
+        <span class="partner-logo">
+        {{ end }}
+          {{ if .logo }}
+            <img src="{{ .logo | relURL }}" alt="{{ .name }}" />
+          {{ else }}
+            <span class="partner-logo__name">{{ .name }}</span>
+          {{ end }}
+        {{ if .url }}</a>{{ else }}</span>{{ end }}
+        {{ end }}
+        {{ if not $partners }}
+        <span class="partner-logo partner-logo--placeholder"></span>
+        <span class="partner-logo partner-logo--placeholder"></span>
+        <span class="partner-logo partner-logo--placeholder"></span>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,58 @@
+<section class="section section--alt" id="past">
+  <div class="container section__inner--narrow">
+    <h2 class="section__title">Past Events</h2>
+    <p class="section__lead">Archive of previous meetings and presentations.</p>
+
+    {{ $past := hugo.Data.events.past }}
+    {{ if $past }}
+    <ul class="event-list" role="list">
+      {{ range $past }}
+      <li class="event-item event-item--past">
+        <div class="event-item__date-block event-item__date-block--muted">
+          <span class="event-item__day">{{ dateFormat "02" .date }}</span>
+          <span class="event-item__month">{{ dateFormat "Jan" .date }}</span>
+          <span class="event-item__year">{{ dateFormat "2006" .date }}</span>
+        </div>
+        <div class="event-item__body">
+          <h3 class="event-item__title">{{ .title }}</h3>
+          {{ if .location }}
+          <div class="event-item__meta">
+            <span class="event-item__meta-item">{{ .location }}</span>
+          </div>
+          {{ end }}
+          {{ if .summary }}<p class="event-item__abstract">{{ .summary }}</p>{{ end }}
+          {{ if .talks }}
+          <ul class="talk-list" role="list">
+            {{ range .talks }}
+            <li class="talk-item">
+              <div class="talk-item__header">
+                <span class="talk-item__title">{{ .title }}</span>
+                {{ if .speaker }}
+                <span class="talk-item__speaker">
+                  {{ .speaker }}{{ if .affiliation }} &middot; {{ .affiliation }}{{ end }}
+                </span>
+                {{ end }}
+              </div>
+              {{ if or .slides .recording }}
+              <div class="talk-item__links">
+                {{ if .slides }}
+                <a class="badge badge--slides" href="{{ .slides | relURL }}" target="_blank" rel="noopener">Slides</a>
+                {{ end }}
+                {{ if .recording }}
+                <a class="badge badge--recording" href="{{ .recording }}" target="_blank" rel="noopener">Recording</a>
+                {{ end }}
+              </div>
+              {{ end }}
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    {{ else }}
+    <p class="event-list__empty">No past events recorded yet.</p>
+    {{ end }}
+  </div>
+</section>
