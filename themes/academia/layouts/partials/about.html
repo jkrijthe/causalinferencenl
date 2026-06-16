@@ -5,7 +5,7 @@
       {{ .Params.about_body | markdownify }}
     </div>
 
-    {{ $partners := hugo.Data.partners }}
+    {{ $partners := .Site.Data.partners }}
     <div class="partner-logos">
       <p class="partner-logos__label">Participating institutions &amp; groups</p>
       <div class="partner-logos__grid">
