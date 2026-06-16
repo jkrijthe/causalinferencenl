@@ -3,7 +3,7 @@
     <h2 class="section__title">Upcoming Events</h2>
     <p class="section__lead">Our next quarterly meetings and talks.</p>
 
-    {{ $upcoming := hugo.Data.events.upcoming }}
+    {{ $upcoming := .Site.Data.events.upcoming }}
     {{ if $upcoming }}
     <ul class="event-list" role="list">
       {{ range $upcoming }}
