@@ -1,25 +1,22 @@
 baseURL = "https://www.causalinference.nl/"
 languageCode = "en-us"
-title = "Dutch Causal Inference Network"
+title = "Causal Inference for AI"
 theme = "academia"
 
 disableKinds = ["taxonomy", "term", "section", "RSS"]
 
 [params]
   # ── Hero ──────────────────────────────────────────────────────────────────
-  heroTitle    = "Dutch Causal Inference Network"
-  heroSubtitle = "A network of researchers across the Netherlands meeting quarterly to advance causal reasoning in science and practice."
+  heroTitle    = "Causal Inference for AI"
+  heroSubtitle = "A research community meeting regularly to advance causal reasoning for AI — sharing work-in-progress, discussing methodology, and building connections across institutions."
 
   # ── Navigation ────────────────────────────────────────────────────────────
   [[params.nav]]
-    label = "About"
-    href  = "#about"
-  [[params.nav]]
-    label = "People"
-    href  = "#people"
-  [[params.nav]]
     label = "Upcoming Events"
     href  = "#upcoming"
+  [[params.nav]]
+    label = "About"
+    href  = "#about"
   [[params.nav]]
     label = "Past Events"
     href  = "#past"
