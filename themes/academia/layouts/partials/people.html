@@ -4,7 +4,7 @@
     <p class="section__lead">People behind the meetings.</p>
 
     <ul class="people-grid" role="list">
-      {{ range hugo.Data.people }}
+      {{ range .Site.Data.people }}
       <li class="person-card">
 
         <!-- Avatar: use photo if provided, otherwise show initials -->

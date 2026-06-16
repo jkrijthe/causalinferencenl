@@ -3,7 +3,7 @@
     <h2 class="section__title">Past Events</h2>
     <p class="section__lead">Archive of previous meetings and presentations.</p>
 
-    {{ $past := hugo.Data.events.past }}
+    {{ $past := .Site.Data.events.past }}
     {{ if $past }}
     <ul class="event-list" role="list">
       {{ range $past }}
