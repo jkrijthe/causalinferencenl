@@ -4,21 +4,10 @@ title: "Causal Inference for AI"
 # ── About section ─────────────────────────────────────────────────────────
 about_title: "About CI4AI"
 about_body: |
-  **Causal Inference for AI (CI4AI)** is an informal research community
-  bringing together researchers working at the intersection of causal inference
-  and artificial intelligence.
-
-  We meet regularly to share work-in-progress, discuss methodology,
-  and build connections across institutions. Meetings typically include
-  one or two talks followed by informal discussion.
-
-  Our shared interests include — but are not limited to:
-
-  - Causal discovery and graphical models
-  - Causal inference in machine-learning settings
-  - Sensitivity analysis for observational studies
-  - Instrumental variables, regression discontinuity, and related designs
-  - Applications in AI safety, fairness, and robustness
+  **Causal Inference for AI (CI4AI)** is an informal research community coming from different fields
+  , trying to help each other understand causal inference better. We meet roughly once every quarter
+  in either TU Delft, Erasmus MC, LUMC or UMC Utrecht. These meetings have the goal to present to people with other backgrounds and keep in touch with people doing
+  similar things in different institutions. 
 
   Everyone working on or curious about causal inference for AI is welcome
   to join. If you would like to attend a meeting, give a talk, or host a
