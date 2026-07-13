@@ -8,7 +8,7 @@ disableKinds = ["taxonomy", "term", "section", "RSS"]
 [params]
   # ── Hero ──────────────────────────────────────────────────────────────────
   heroTitle    = "Causal Inference for AI"
-  heroSubtitle = "We are a group of researchers from TU Delft, LUMC, Erasmus MC and UMC Utrecht that meet up every quater to discuss interesting topics in Causal Inference."
+  heroSubtitle = "A meeting bringing together researchers interested in causal inference in the Netherlands."
 
   # ── Navigation ────────────────────────────────────────────────────────────
   [[params.nav]]
