@@ -43,7 +43,7 @@ past:
   - title: "Quarterly Meeting — June 2026"
     date: "2026-06-23"
     time: "14:30–17:00 CET"
-    location: "TU Delft, Snijderzaal (LB.01.010)"
+    location: "TU Delft, Snijderszaal (LB.01.010)"
     summary: ""
     talks:
       - title: "Logic and reasoning in causal triangulation: answering causal questions under assumption violations"
@@ -106,11 +106,11 @@ past:
         slides: ""
         recording: ""
         
-  - title: "Quarterly Meeting — December 2025"
+  - title: "Seminar on Prediction under Interventions — December 2025"
     date: "2025-12-02"
     time: "12:15–17:00 CET"
-    location: "Leiden MC"
-    summary: ""
+    location: "LUMC"
+    summary: "Seminar organised by Ilaria Prosepe and Nan van Geloven"
     talks:
       - title: "Self-fulfilling prophecies"
         speaker: "Wouter van Amsterdam"
