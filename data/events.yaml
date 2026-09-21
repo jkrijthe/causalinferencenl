@@ -18,7 +18,22 @@
 #
 # ─────────────────────────────────────────────────────────────────────────────
 
-upcoming: []
+upcoming:
+  - title: "Quarterly Meeting — October 2026"
+    date: "2026-10-05"
+    time: "15:00–18:00 CET"
+    location: "University Medical Center Utrecht, Maliebaanzaal; Heidelberglaan 100, Utrecht (from the main entrance, turn left; the room is in the hallway on the left-hand side)"
+    abstract: "Kick-off of the Causal Inference for AI meeting series for this academic year. Three speakers will present their work, followed by an informal networking session. Talks to be announced."
+    talks:
+      - title: "TBD"
+        speaker: "TBD"
+        affiliation: ""
+      - title: "TBD"
+        speaker: "TBD"
+        affiliation: ""
+      - title: "TBD"
+        speaker: "TBD"
+        affiliation: ""
 
 
 # ─────────────────────────────────────────────────────────────────────────────
