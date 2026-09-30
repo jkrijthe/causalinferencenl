@@ -23,17 +23,17 @@ upcoming:
     date: "2026-10-05"
     time: "15:00–18:00 CET"
     location: "University Medical Center Utrecht, Maliebaanzaal; Heidelberglaan 100, Utrecht (from the main entrance, turn left; the room is in the hallway on the left-hand side)"
-    abstract: "Kick-off of the Causal Inference for AI meeting series for this academic year. Three speakers will present their work, followed by an informal networking session. Talks to be announced."
+    abstract: "Kick-off of the Causal Inference for AI meeting series for this academic year. Three speakers will present their work, followed by an informal networking session."
     talks:
-      - title: "TBD"
-        speaker: "TBD"
-        affiliation: ""
-      - title: "TBD"
-        speaker: "TBD"
-        affiliation: ""
-      - title: "TBD"
-        speaker: "TBD"
-        affiliation: ""
+      - title: "Evaluation Metrics for Predictions of Conditional Average Treatment Effects"
+        speaker: "Isak Åslund"
+        affiliation: "Leiden MC"
+      - title: "A Causal Approach to Describing Disparities Across Post-Intervention Variables"
+        speaker: "Colleen Reynolds"
+        affiliation: "Erasmus MC"
+      - title: "Rank-Learner: Orthogonal Ranking of Treatment Effects"
+        speaker: "Henri Arno"
+        affiliation: "Ghent university"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
