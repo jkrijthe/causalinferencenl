@@ -34,7 +34,12 @@ upcoming:
       - title: "Rank-Learner: Orthogonal Ranking of Treatment Effects"
         speaker: "Henri Arno"
         affiliation: "Ghent university"
-
+  - title: "Quarterly Meeting - November 2026"
+    date: "2026-11-30"
+    location: "Leiden University Medical Center"
+  - title: "Quarterly Meeting - November 2026"
+    date: "2027-05-31"
+    location: "TU Delft"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # past — list of past meetings, most recent first
