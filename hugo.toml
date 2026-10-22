@@ -1,5 +1,6 @@
 baseURL = "https://www.causalinference.nl/"
 languageCode = "en-us"
+timeZone = "Europe/Amsterdam"  # used for event dates (past/upcoming cutoff)
 title = "Causal Inference for AI"
 theme = "academia"
 

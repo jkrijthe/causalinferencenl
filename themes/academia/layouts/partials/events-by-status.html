@@ -1,0 +1,22 @@
+{{- /*
+  Splits .Site.Data.events into upcoming and past. Each event gets a "cutoff":
+  midnight at the start of the day after the event, in the site timeZone. An
+  event is upcoming until its cutoff (so through the whole event day) and past
+  from then on. Upcoming is sorted soonest first, past most recent first.
+
+  This split is only the initial placement at build time; main.js re-checks
+  the cutoffs in the browser so the lists stay correct without a rebuild.
+  Usage: {{ $events := partial "events-by-status.html" . }}
+*/ -}}
+{{- $upcoming := slice -}}
+{{- $past := slice -}}
+{{- range .Site.Data.events -}}
+  {{- $cutoff := (time.AsTime (time.Format "2006-01-02" .date)).AddDate 0 0 1 -}}
+  {{- $event := merge . (dict "cutoff" $cutoff) -}}
+  {{- if $cutoff.After now -}}
+    {{- $upcoming = $upcoming | append $event -}}
+  {{- else -}}
+    {{- $past = $past | append $event -}}
+  {{- end -}}
+{{- end -}}
+{{- return dict "upcoming" (sort $upcoming "date" "asc") "past" (sort $past "date" "desc") -}}

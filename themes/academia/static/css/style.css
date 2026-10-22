@@ -382,6 +382,8 @@ ul, ol { list-style: none; }
   gap: var(--space-lg);
 }
 
+.event-list[hidden] { display: none; }
+
 .event-list__empty {
   color: var(--color-muted);
   font-style: italic;
@@ -520,6 +522,8 @@ ul, ol { list-style: none; }
 }
 .talk-item:last-child { border-bottom: none; }
 .event-item--past .talk-item { background: var(--color-bg); }
+.event-item--past .badge--register { display: none; }
+.event-item--upcoming .talk-item__header { display: contents; }
 
 .talk-item__header {
   display: flex;

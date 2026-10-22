@@ -92,51 +92,28 @@ To **add** a person: copy one block, paste it at the end, and fill in the fields
 To **remove** a person: delete the entire block (from `- name:` down to the next one).  
 To **add a photo**: place the image in `static/images/people/` and set `photo: "images/people/yourfile.jpg"`.
 
-### Upcoming events
+### Events
 
-Edit `data/events.yaml` under the `upcoming:` key:
-
-```yaml
-upcoming:
-  - title: "Quarterly Meeting — Q3 2026"
-    date: "2026-07-03"             # ISO format YYYY-MM-DD
-    time: "14:00–17:00 CET"        # optional
-    location: "University X, Room Y, Address"  # optional
-    abstract: "Short description." # optional — shown below the logistics
-    registration: "https://..."    # optional — link to sign-up page
-    talks:                         # optional — list known speakers in advance
-      - title: "Talk title"
-        speaker: "Dr. Name"
-        affiliation: "University"
-```
-
-List entries with the soonest date first. When an event has passed, move it to the `past:` list.
-
-### Past events
-
-Edit `data/events.yaml` under the `past:` key. Each meeting can hold multiple talks, each with its own slides and/or recording link:
+All events, past and upcoming, live in a single list in `data/events.yaml`. You never need to move an event between sections: events dated **today or later** appear under *Upcoming Events* (soonest first), and events **at least one day old** appear under *Past Events* (most recent first). The order of entries in the file does not matter.
 
 ```yaml
-past:
-  - title: "Quarterly Meeting — Q2 2026"
-    date: "2026-04-04"
-    location: "University X"       # optional
-    summary: "Overall notes."      # optional
-    talks:
-      - title: "First talk title"
-        speaker: "Dr. Name"
-        affiliation: "University"
-        slides: "files/slides/2026-04-talk1.pdf"   # optional
-        recording: "https://..."                   # optional
-      - title: "Second talk title"
-        speaker: "Dr. Other"
-        affiliation: "University"
-        slides: ""
-        recording: ""
+- title: "Quarterly Meeting — Q3 2026"
+  date: "2026-07-03"               # ISO format YYYY-MM-DD
+  time: "14:00–17:00 CET"          # optional
+  location: "University X, Room Y, Address"  # optional
+  abstract: "Short description."   # optional
+  registration: "https://..."      # optional — hidden once the event is past
+  talks:                           # optional — use talks: [] if none are known yet
+    - title: "Talk title"
+      speaker: "Dr. Name"
+      affiliation: "University"
+      slides: "files/slides/2026-07-talk1.pdf"   # optional
+      recording: "https://..."                   # optional
 ```
 
-To **add slides**: place the PDF in `static/files/slides/` and set `slides: "files/slides/yourfile.pdf"`.  
-An event with no talks yet can use `talks: []` — the talk table is simply omitted.
+To **add slides**: place the PDF in `static/files/slides/` and set `slides: "files/slides/yourfile.pdf"`.
+
+No rebuild is needed when an event passes: each event is stamped with the moment it becomes past (midnight Amsterdam time after the event day), and a small script in the browser moves it from *Upcoming Events* to *Past Events* at that moment, even while the page is open. Without JavaScript, the split from the last build is shown.
 
 ---
 
@@ -178,7 +155,7 @@ The live site will be available at the URL in your `CNAME` file (currently `www.
 │   └── _index.md          # About section text
 ├── data/
 │   ├── people.yaml        # People / key contacts
-│   └── events.yaml        # Upcoming and past events (with slides links)
+│   └── events.yaml        # All events — sorted into upcoming/past automatically
 ├── static/
 │   ├── images/people/     # Place member photos here
 │   └── files/slides/      # Place presentation PDFs here
