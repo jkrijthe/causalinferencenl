@@ -37,7 +37,18 @@
 
 - title: "Quarterly Meeting - November 2026"
   date: "2026-11-30"
-  location: "Leiden University Medical Center"
+  time: "15:00-17:30 CET"
+  location: "LUMC research building (building 2), ground floor, Sylvius room (T-00-022)"
+  talks:
+    - title: "Partial identification of version-specific causal effects in the presence of multiple versions of treatment"
+      speaker: "Chang Wei"
+      affiliation: "Erasmus MC"
+    - title: "The 2-Step Agent: Failure Modes in AI Decision Support"
+      speaker: "Otto Nyberg"
+      affiliation: "Amsterdam UMC"
+    - title: "Data-Driven Covariate Selection for Nonparametric and Cycle-Agnostic Causal Effect Estimation"
+      speaker: "Gijs can Seeventer"
+      affiliation: "Leiden University"
 
 - title: "Quarterly Meeting — October 2026"
   date: "2026-10-05"
